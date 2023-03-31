@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon web" href="/img/transparent.jpeg" type="image/jpeg">
+  <title>Survey Magang</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="bg-overlay"></div>
+  <div class="main">
+    <header>
+      <h1 id="title">Survey Magang UMMU</h1>
+      <p id="description">
+        Silakan isi survei ini untuk mendaftar Magang
+        iminDev
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="name">
+        <label id="nama-label " for="name"><strong>Nama</strong><sup>*</sup>
+        </label>
+        <br />
+        <input required placeholder="Nama Anda" id="name" type="text" />
+      </div>
+
+      <div class="email">
+        <label id="email-label" for="email"><strong>E-mail</strong><sup>*</sup></label>
+        <br />
+        <input required placeholder="E-mail Anda" id="email" type="email" />
+      </div>
+
+      <div class="gender">
+        <label for="radio-group"><strong>Jenis Kelamin</strong></label> <br />
+        <div id="radio-group">
+          <div id="r" class="int-inp">
+            <label for="male">Laki-Laki</label>
+            <input type="radio" name="gender" id="male" value="male" />
+          </div>
+          <div id="r" class="int-inp">
+            <label for="female">Perempuan</label>
+            <input type="radio" name="gender" value="female" id="female" />
+          </div>
+          <div id="r" class="int-inp">
+            <label for="others">Lainnya</label>
+            <input type="radio" name="gender" id="others" value="other" />
+          </div>
+        </div>
+      </div>
+
+      <div class="internship">
+        <label for="checkbox"><strong>Tertarik Magang DiBidang</strong></label>
+        <br />
+        <div id="checkbox-group">
+          <div class="int-inp">
+            <label for="web">Web Development</label>
+            <input type="checkbox" name="internship" id="web" value="web" />
+          </div>
+
+          <div class="int-inp">
+            <label for="android">Android Development</label>
+            <input type="checkbox" name="internship" value="android" id="android" />
+          </div>
+
+          <div class="int-inp">
+            <label for="machine">Cyber Security</label>
+            <input type="checkbox" name="internship" id="machine" value="machine" />
+          </div>
+        </div>
+      </div>
+
+      <div class="education">
+        <div class="branch">
+          <label for="dropdown"><strong>Jurusan<sup>*</sup></strong></label><br />
+          <select name="Branch" id="dropdown">
+            <option value="computer-science">Ilmu Komputer</option>
+            <option value="information-technology">Informatika</option>
+            <option value="software-engineering">Rekayasa Perangkat Lunak</option>
+            <option value="electrical-electronics">Teknologi Informasi</option>
+          </select>
+        </div>
+
+        <div class="semester">
+          <label id="number-label" for="semester"><strong>Semester<sup>*</sup></strong></label><br />
+          <input required placeholder="0" min="1" max="8" id="semester" type="number" />
+        </div>
+      </div>
+
+      <div class="comment">
+        <label for="comment"><strong>Silahkan isi Pesan Anda</strong></label><br />
+        <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+      </div>
+
+      <button type="submit" id="submit">Kirim</button>
+    </form>
+  </div>
+</body>
+
+</html>
